@@ -1,0 +1,117 @@
+1.
+package com.xworkz.testapp;
+
+import java.util.Arrays;
+
+public class TwoFunction {
+	public  static int min(int a[])
+	{
+		Arrays.sort(a);
+		int result = a[0];
+		return result;
+	}
+	public static int max(int a[])
+	{
+		Arrays.sort(a);
+		int result = a[a.length-1];
+		return result;
+	}
+	public static void main(String[] args) {
+		TwoFunction TF = new TwoFunction();
+		
+		int arr[] = {45,333,76,29,900,23,474,654,29,454};
+		System.out.println("Given List:-"+Arrays.toString(arr));
+		System.out.println("Min Number is -> "+TF.min(arr));
+		System.out.println("Max number is -> "+TF.max(arr));
+	}
+
+}
+
+
+
+2.
+package com.xworkz.testapp;
+
+public class Timmy {
+	public boolean check(int s)
+	{
+		if(s%2!=0)
+		{
+			System.out.println("They are in love");
+		}
+		else
+		{
+			System.out.println("They are not in love");
+		}
+		return false;
+	}
+
+	public static void main(String[] args) {
+		Timmy t = new Timmy();
+		System.out.println(t.check(2));
+		
+		
+
+	}
+
+}
+
+
+3.what are the Generalized and specialized class in java ?
+Generalized :-
+* Converting a subclass type to superclass type is called Generalized class.
+*The process of extracting common characteristics from two or more classes and combining them into a generalized superclass is called Generalization.
+
+ specialized :-
+*Specialization is the reverse process of Generalization means creating new subclasses from an existing class.	
+
+
+
+4.
+a)by making the class constructor private. If we make the class constructor private we'll not be able to create the object of this class from outside of this class.
+
+b)java.lang.String, java.lang.Math are final classes.
+
+c)Delegation
+
+6.
+ArrayList :-
+*ArrayList internally uses a dynamic array to store the elements.
+*An ArrayList class can act as a list only because it implements List only.
+*ArrayList is better for storing and accessing data.
+
+LinkedList :-
+*LinkedList internally uses a doubly linked list to store the elements.
+*LinkedList class can act as a list and queue both because it implements List and Deque interfaces.
+*LinkedList is better for manipulating data.
+
+7.
+Iterator :-
+*Can traverse elements present in Collection only in the forward direction.
+*Helps to traverse Map, List and Set.
+*Indexes cannot be obtained by using Iterator.
+
+ListIterator :-
+*Can traverse elements present in Collection both in forward and backward directions.
+*Can only traverse List and not the other two.
+*Can easily add elements to a collection at any time.
+
+8.
+The covariant method overriding approach, implemented in Java 5, helps to remove the client-side typecasting by enabling you to return a subtype of the overridden method’s actual return type.
+
+
+9.A Memory Leak is a situation where there are objects present in the heap that are no longer used, but the garbage collector is unable to remove them from memory, and therefore, they're unnecessarily maintained. A memory leak is bad because it blocks memory resources and degrades system performance over time.
+
+10.
+Static Polymorphism :-
+*Compile Time Polymorphism In Java is also known as Static Polymorphism.
+* Furthermore, the call to the method is resolved at compile-time. Compile-Time polymorphism is achieved through Method Overloading. This type of polymorphism can also be achieved through Operator Overloading. However, Java does not support Operator Overloading.
+
+Dynamic Polymorphism :-
+*Runtime polymorphism in Java is also popularly known as Dynamic Method Dispatch.
+* In this process, the call to an overridden method is resolved dynamically at runtime rather than at compile-time. You can achieve Runtime polymorphism via Method Overriding.
+
+11.
+Declare a class as protected.
+
+
